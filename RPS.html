@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_&_Scissor Game</title>
+    <link rel="stylesheet" href="RPS.css">
+</head>
+<body>
+    <div class="container-1">
+        <div class="logo">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+            <div class="scores">
+            <div class="score-1">
+                <p>COMPUTER</p>
+                <p>SCORE</p>
+                <span id="c-score">0</span>
+            </div>
+            <div class="score-2">
+                <p>YOUR</p>
+                <p>SCORE</p>
+                <span id="score">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="game-con">
+        <div class="info">
+            <p id="youpick-txt" class="user">YOU PICKED</p>
+            <p id="pcpick-txt" class="machine">COMPUTER PICKED</p>
+        </div>
+    </div>
+    <div class="option">
+        <img src="triangle.png" alt="" class="triangle">
+        
+        <div class="sci-con con">
+            <div class="item">
+                <img src="scissors.png" alt="" class="scissor">
+            </div>
+        </div>
+        <div class="rock-con con">
+            <div class="item">
+                <img src="icons8-fist-67 1.png" alt="" class="fist">
+            </div>
+        </div>
+        <div class="paper-con con">
+            <div class="item">
+                <img src="icons8-hand-64 1.png" alt="" class="hand">
+            </div>
+        </div>
+        <div class="sci-con computer">
+            <div class="item">
+                <img src="scissors.png" alt="" class="scissors">
+            </div>
+        </div>
+        <div class="rock-con computer">
+            <div class="item">
+                <img src="icons8-fist-67 1.png" alt="" class="fist">
+            </div>
+        </div>
+        <div class="paper-con computer">
+            <div class="item">
+                <img src="icons8-hand-64 1.png" alt="" class="hand">
+            </div>
+        </div> 
+    </div>
+    <div class="btn-div">
+        <button id="rules-btn" onclick="hideRules()">RULES</button>
+        <div id="rules-container">
+        <div id="rules">
+            <div id="rules-heading">Game Rules</div>
+            <div id="rules-list">
+            <ul>
+                <li>
+                    <p>
+                    Rock beats scissors, scissors beat paper, and paper beats rock.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    Agree ahead of time whether you’ll count off “rock, paper,
+                    scissors, shoot” or just “rock, paper, scissors.”
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    Use rock, paper, scissors to settle minor decisions or simply
+                    play to pass the time
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    If both players lay down the same hand, each player lays down
+                    another hand
+                    </p>
+                </li>
+            </ul>
+            </div>
+            </div>
+                <button id="close" onclick="hideRules()">X</button>
+            </div>
+            <div class="win-model">
+                <h1 class="winner">YOU WIN</h1>
+                <h2 class="winner-1">AGAINST PC</h2>
+                <div class="p-btn">
+                    <button id="play">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="RPS.js"></script>
+</body>
+</html>
